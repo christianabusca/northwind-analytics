@@ -1,300 +1,164 @@
-# 🚀 Northwind Analytics Odyssey
+# 📊 Northwind E-Commerce Analytics
 
-> *From SQL Novice to Data Storyteller: Your Journey Through E-Commerce Intelligence*
+> SQL-based sales analytics dashboard built on the Northwind PostgreSQL database
 
-[![SQL](https://img.shields.io/badge/SQL-Analytics-blue?style=for-the-badge&logo=postgresql)](https://www.postgresql.org/)
-[![Learning Path](https://img.shields.io/badge/Learning-Progressive-green?style=for-the-badge)](https://github.com)
-[![Difficulty](https://img.shields.io/badge/Level-Beginner%20to%20Advanced-orange?style=for-the-badge)](https://github.com)
-
----
-
-## 🎯 What is This?
-
-Welcome to **Northwind Analytics Odyssey** – a carefully crafted, progressive SQL learning journey using the classic Northwind e-commerce database. This isn't just another SQL tutorial; it's a story-driven path that transforms you from writing basic queries to building executive-level analytics dashboards.
-
-Think of it as your **data analysis bootcamp** where every query teaches you something new, and every section builds on the last like chapters in a compelling book.
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+[![SQL](https://img.shields.io/badge/SQL-Analytics-blue?style=flat-square)](https://github.com)
 
 ---
 
-## 🗺️ The Journey Ahead
+## 📖 About
 
-### **Act I: Data Discovery** 🔍
-*Learn to navigate and understand your data landscape*
-
-- **Chapter 1:** Exploring the Territory – Basic SELECT, filtering, sorting
-- **Chapter 2:** Finding Patterns – LIKE, wildcards, NULL handling
-- **Chapter 3:** Counting What Matters – Aggregations and simple analytics
-
-**Skills Unlocked:** `SELECT`, `WHERE`, `ORDER BY`, `LIKE`, `COUNT()`, `SUM()`, `AVG()`
+Personal analytics project exploring e-commerce data patterns using SQL. Built on the [Northwind PostgreSQL database](https://github.com/pthom/northwind_psql) with queries progressing from basic exploration to advanced business intelligence.
 
 ---
 
-### **Act II: The Art of Grouping** 📊
-*Master the power of summarization and categorization*
+## 🗂️ Project Structure
 
-- **Chapter 4:** Grouping by Category – GROUP BY fundamentals
-- **Chapter 5:** Filtering the Aggregates – HAVING clause mastery
-- **Chapter 6:** Multi-dimensional Analysis – Complex groupings
+### **Section 1: Data Exploration**
+Understanding the data foundation
+- Explore individual tables (products, orders, customers)
+- Filter and sort operations
+- Pattern matching with LIKE and wildcards
 
-**Skills Unlocked:** `GROUP BY`, `HAVING`, Multi-level aggregations, Business metrics
+### **Section 2: Aggregation & Grouping**
+Summarizing data to find patterns
+- Basic aggregations (AVG, SUM, COUNT)
+- GROUP BY fundamentals
+- Filtering grouped data with HAVING
 
----
+### **Section 3: JOINs**
+Connecting related data across tables
+- Two-table joins (products + categories, orders + customers)
+- Multi-table joins (4+ tables)
+- LEFT JOINs to find missing data
 
-### **Act III: Connecting the Dots** 🔗
-*Weave together relationships across your data universe*
+### **Section 4: Business Analytics**
+Answering real business questions
+- **Revenue Analysis**: Order totals, monthly trends, top customers
+- **Product Performance**: Rankings, best sellers, category contributions
+- **Customer Insights**: Segmentation, lifetime value, retention rates
+- **Time-Based Analysis**: Running totals, moving averages, growth rates
 
-- **Chapter 7:** Simple Connections – Two-table JOINs
-- **Chapter 8:** The Grand Tapestry – Multi-table JOINs
-- **Chapter 9:** Finding the Gaps – LEFT JOINs and missing data
+### **Section 5: Advanced Queries**
+Complex analytical challenges
+- **Executive Dashboards**: Multi-metric KPI queries
+- **Data Quality Checks**: Validation and error detection
+- **Complex Business Questions**: Retention rates, basket affinity, seasonality
 
-**Skills Unlocked:** `INNER JOIN`, `LEFT JOIN`, `RIGHT JOIN`, Table relationships, Data integrity
+### **Section 6: Reporting**
+Production-ready output formatting
+- Pivot tables and cross-tabs
+- Number formatting and NULL handling
+- Summary reports with subtotals (ROLLUP, CUBE)
 
----
-
-### **Act IV: Business Intelligence** 💼
-*Answer real-world business questions with data*
-
-- **Chapter 10:** Revenue Detective – Sales and revenue analysis
-- **Chapter 11:** Product Performance – Rankings and trends
-- **Chapter 12:** Customer Intelligence – Segmentation and insights
-- **Chapter 13:** Time Traveler – Temporal analysis and forecasting
-
-**Skills Unlocked:** Window functions, `LAG()`, `LEAD()`, `ROW_NUMBER()`, `NTILE()`, CTEs
-
----
-
-### **Act V: Master Analytics** 🎓
-*Tackle complex problems like a seasoned data professional*
-
-- **Chapter 14:** Executive Dashboards – KPIs and metrics
-- **Chapter 15:** Data Quality Guardian – Validation queries
-- **Chapter 16:** Strategic Insights – Retention, affinity, seasonality
-
-**Skills Unlocked:** Complex CTEs, Subqueries, Set operations, Advanced window functions
-
----
-
-### **Act VI: The Final Showcase** 🏆
-*Build a complete analytics solution*
-
-Your capstone project: A comprehensive executive sales dashboard that synthesizes everything you've learned into a production-ready analytical tool.
+### **Final Project: Executive Sales Dashboard**
+Comprehensive dashboard including:
+- KPI summary (revenue, orders, AOV, YoY growth)
+- Top performers (products, customers, employees)
+- Trend analysis (monthly revenue, moving averages)
+- Geographic breakdown
+- Inventory alerts
 
 ---
 
-## 🎓 Learning Philosophy
+## 🚀 Setup
 
-### **Progressive Complexity**
-Each task introduces exactly **one or two new concepts** while reinforcing previous skills. No cognitive overload!
-
-### **Real Business Context**
-Every query solves an actual business problem. You're not just learning syntax; you're learning to think like an analyst.
-
-### **Fail-Safe Design**
-Tasks are ordered so that if you get stuck, you can still complete earlier sections and build confidence.
-
-### **Hands-On Practice**
-No passive reading – every concept comes with practical tasks you execute yourself.
-
----
-
-## 📁 Repository Structure
-
-```
-northwind-analytics-odyssey/
-│
-├── 01-data-discovery/
-│   ├── explore-tables.sql
-│   ├── filter-and-sort.sql
-│   └── pattern-matching.sql
-│
-├── 02-aggregation-grouping/
-│   ├── basic-aggregations.sql
-│   ├── group-by-fundamentals.sql
-│   └── filtering-grouped-data.sql
-│
-├── 03-joins/
-│   ├── simple-joins.sql
-│   ├── multi-table-joins.sql
-│   └── left-joins.sql
-│
-├── 04-business-analytics/
-│   ├── revenue-analysis.sql
-│   ├── product-performance.sql
-│   ├── customer-insights.sql
-│   └── time-based-analysis.sql
-│
-├── 05-advanced-challenges/
-│   ├── executive-dashboards.sql
-│   ├── data-quality-checks.sql
-│   └── complex-business-questions.sql
-│
-├── 06-final-project/
-│   └── executive-sales-dashboard.sql
-│
-├── data/
-│   └── northwind-erd.png
-│
-└── README.md (you are here!)
-```
-
----
-
-## 🚦 Getting Started
-
-### **Prerequisites**
-- Basic understanding of databases (what a table is, what a row/column is)
-- PostgreSQL installed (version 12+)
-- Docker (optional, for containerized setup)
-- Curiosity and determination! 🔥
-
-### **Recommended Tools**
-- **pgAdmin** – Visual PostgreSQL administration
-- **DBeaver** – Universal database tool
-- **VS Code with SQLTools extension** – Lightweight SQL IDE
-- **TablePlus** – Modern database GUI (macOS/Windows)
-
-### **Database Setup**
-
-This project uses the **Northwind database for PostgreSQL** originally from [pthom/northwind_psql](https://github.com/pthom/northwind_psql).
-
-#### **Option 1: Docker Setup (Recommended)** 🐳
+**Database:** [pthom/northwind_psql](https://github.com/pthom/northwind_psql)
 
 ```bash
-# Clone the base Northwind database repository
+# Clone and start the database
 git clone https://github.com/pthom/northwind_psql.git
 cd northwind_psql
-
-# Start PostgreSQL with Northwind data
 docker-compose up -d
 
-# Verify the database is running
-docker ps
+# Connection: localhost:5432, database: northwind, user/pass: postgres
 ```
 
-**Connection Details:**
-- Host: `localhost`
-- Port: `5432`
-- Database: `northwind`
-- User: `postgres`
-- Password: `postgres`
+---
 
-#### **Option 2: Manual PostgreSQL Setup**
+## 📊 Key Analytics Areas
 
-```bash
-# 1. Create the database
-psql -U postgres -c "CREATE DATABASE northwind;"
+### Revenue Analysis
+- Total revenue calculations: `quantity × unit_price × (1 - discount)`
+- Monthly/yearly revenue trends
+- Top revenue-generating orders and customers
+- Category-level performance
 
-# 2. Import the Northwind schema and data
-psql -U postgres -d northwind -f northwind.sql
+### Product Performance
+- Product rankings by quantity sold and revenue
+- ABC classification (Pareto analysis)
+- Inventory turnover rates
+- Best sellers per category
 
-# 3. Verify the import
-psql -U postgres -d northwind -c "SELECT COUNT(*) FROM products;"
-```
+### Customer Intelligence
+- Customer segmentation (High/Medium/Low value)
+- Lifetime value calculations
+- Retention and cohort analysis
+- Average order value per customer
 
-### **Your First Steps**
+### Time-Series Analysis
+- Running totals by date
+- Month-over-month growth rates
+- 3-month moving averages
+- Seasonal trend detection
 
-1. **Clone this analytics repository**
-   ```bash
-   git clone https://github.com/yourusername/northwind-analytics-odyssey.git
-   cd northwind-analytics-odyssey
-   ```
-
-2. **Set up the Northwind database** (see options above)
-
-3. **Test your connection**
-   ```sql
-   -- Run this query to verify everything works
-   SELECT 
-       COUNT(*) as total_products,
-       AVG(unit_price) as avg_price
-   FROM products;
-   ```
-   Expected: ~77 products with average price around $28
-
-4. **Start with Section 1, Task 1.1**
-   - Open `01-data-discovery/explore-tables.sql`
-   - Read the task descriptions
-   - Write your queries
-   - Run them and observe the results
-
-5. **Track your progress**
-   - Check off completed tasks in this README
-   - Commit your solutions to your forked repo
-   - Celebrate small wins! 🎉
+### Geographic Insights
+- Revenue by country/region
+- Market penetration metrics
+- Regional performance comparison
 
 ---
 
-## 💡 Learning Tips
+## 🛠️ SQL Techniques Used
 
-| Tip | Why It Matters |
-|-----|----------------|
-| **Test on small data first** | Use `LIMIT 10` while developing – catch errors faster |
-| **Comment your code** | Future you will thank present you |
-| **Format for readability** | Indentation and line breaks = clarity |
-| **Check for duplicates** | Use `COUNT(*)` after JOINs to verify correctness |
-| **Use EXPLAIN** | Add `EXPLAIN ANALYZE` to understand query performance |
-| **Break down complex queries** | Build CTEs step-by-step, test each part |
+**Fundamentals**
+- SELECT, WHERE, ORDER BY, LIMIT
+- Filtering (comparison operators, IN, BETWEEN, LIKE)
+- Date functions and arithmetic
 
----
+**Aggregations**
+- COUNT(), SUM(), AVG(), MIN(), MAX()
+- GROUP BY with multiple dimensions
+- HAVING for post-aggregation filtering
 
-## 🎯 Success Metrics
+**JOINs**
+- INNER JOIN for related data
+- LEFT JOIN for missing data detection
+- Multi-table joins (4+ tables)
+- Table aliases
 
-You'll know you're progressing when you can:
+**Advanced SQL**
+- Window functions (ROW_NUMBER, RANK, NTILE, LAG, LEAD)
+- Common Table Expressions (CTEs)
+- CASE statements for segmentation
+- PARTITION BY for grouped calculations
+- Subqueries and nested queries
 
-- ✅ Write queries without constantly checking syntax references
-- ✅ Explain what a query does in plain English to a non-technical person
-- ✅ Debug queries by systematically testing each component
-- ✅ Optimize slow queries using indexes and query restructuring
-- ✅ Translate business questions into SQL logic automatically
-
----
-
-## 🤝 Contributing
-
-Found a better way to explain a concept? Have a creative task idea? **Contributions are welcome!**
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-task`)
-3. Commit your changes (`git commit -m 'Add an amazing new task'`)
-4. Push to the branch (`git push origin feature/amazing-task`)
-5. Open a Pull Request
+**Reporting**
+- CROSSTAB for pivot tables
+- ROLLUP and CUBE for subtotals
+- ROUND() and formatting functions
+- COALESCE() for NULL handling
 
 ---
 
-## 📜 License
+## 💡 Query Development Tips
 
-This project is licensed under the MIT License – see the LICENSE file for details.
-
----
-
-## 🙏 Acknowledgments
-
-- The **Northwind Database** – A timeless teaching tool
-- The SQL community for decades of shared knowledge
-- Every learner who's ever struggled with JOINs and lived to tell the tale
+- **Test incrementally**: Use `LIMIT 10` while developing
+- **Comment your code**: Use `--` for clarity
+- **Format for readability**: Indentation and line breaks
+- **Verify joins**: Use `COUNT(*)` to check for duplicates
+- **Analyze performance**: Add `EXPLAIN ANALYZE` before queries
 
 ---
 
-## 📬 Questions or Stuck?
+## 📝 License
 
-- Open an issue in this repository
-- Tag it with `help-wanted` or `question`
-- The community is here to help you succeed!
+MIT License
 
 ---
 
-<div align="center">
+## 🙏 Credits
 
-**Ready to begin your odyssey?**
-
-⭐ **Star this repo** to bookmark your journey
-
-🍴 **Fork it** to make it your own
-
-🚀 **Start with Task 1.1** and let the adventure begin!
-
----
-
-*"Data is the new oil, but SQL is the refinery."*
-
-</div>
+Database: [pthom/northwind_psql](https://github.com/pthom/northwind_psql)
